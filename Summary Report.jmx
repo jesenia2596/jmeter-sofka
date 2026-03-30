@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="380" it="0" lt="380" ct="102" ts="1774908091823" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-1" dt="text" de="utf-8" by="802" sby="235" sc="1" ec="1" ng="2" na="3" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:32 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=6,cfOrigin;dur=229
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=rLgeGORzciL9Xshts%2FgzEpJfIXcTwJCQqSAzyPoc5nsfoKC5%2F1MY%2Fm4%2FJgU9YjL2B9RQbeqvw79b5qRYLzVrWmFclNAD0xqEfYMXfYlnf%2Fi0QiYUC0HxOvswYEJyrddWTeU8&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64b6fad5eeeb-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user&quot;,&#xd;
+  &quot;password&quot;: &quot;passwd&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="949" it="0" lt="949" ct="637" ts="1774908092428" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-3" dt="text" de="utf-8" by="920" sby="237" sc="1" ec="0" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;94-4XcBO7nc14DnxrAbeYB3vs0qjJw&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=237
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=%2FFLeLCuaEYtdKtIi7Zq3rxUBM%2Fd%2BsvyLtBIwWLuRqUKQYQrg4pdmq6HyzZXT1TrFTdPu9LMWt3WiUUZy4%2FYNsyjcmNyAz46w2vS1zKTx8ExJTWsOdbBgGQmw6cbppBChf%2FCa&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64be3a734089-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 55
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTc3NDkwODA5M30.cWjdaQmVhXY7K5SjdGw8GHNv-4n2DYGfgKROv0hfqRs&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;johnd&quot;,&#xd;
+  &quot;password&quot;: &quot;m38rmF$&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="361" it="0" lt="361" ct="86" ts="1774908093026" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-5" dt="text" de="utf-8" by="922" sby="239" sc="1" ec="0" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 152
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;98-LEVuqF//mvQNXRrQkHjsansI71s&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=230
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=1MqWGoLhtUQVH5hVn1hEHMvp1J7g0%2BcgHCPr06NgGrrwkDbYgAQ8vk1%2BUcpgtsW1zqwJVyNnawX6RcArGYTZnHp1DfN38TO4MttYRVqNiUfH6zpOD%2BCiT6%2Fq8dD9eat2pBpU&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64be6ffc0870-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 57
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXIiOiJtb3JfMjMxNCIsImlhdCI6MTc3NDkwODA5M30.r7YuRUON3zYjHrpcCl1pd95IEBWxYXUfgeaWyULY4Fk&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;mor_2314&quot;,&#xd;
+  &quot;password&quot;: &quot;83r5^_&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="1346" it="0" lt="1346" ct="919" ts="1774908092127" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-2" dt="text" de="utf-8" by="921" sby="237" sc="1" ec="0" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 149
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;95-XSVE9QQ6uFeXfD8ipzUlFmr7ojE&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=360
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=lzfiW36YDfPJKCKSHgS%2FxfLVSM6uBDWt8f8uDWELekVXjHOxohs1XSU5Gbtg%2FeArRbF2FfgEU0LFWP1h8tGkBKKJxT0rlHsZZ%2BxNyCMZLb3im0J8r%2FAhuVmEp2vD%2FMGgXZbl&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64be1bf6a4e5-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 55
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXIiOiJkb25lcm8iLCJpYXQiOjE3NzQ5MDgwOTN9.WfqU49pZIEPl1hCj2p_C_Hc5VFJ_TyLJTSUVwPFkWik&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;donero&quot;,&#xd;
+  &quot;password&quot;: &quot;ewedon&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="866" it="0" lt="866" ct="321" ts="1774908092724" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-4" dt="text" de="utf-8" by="921" sby="238" sc="1" ec="0" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;94-F7vWvLyZxLGgZNhZApKb4Ws0Hv0&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=10,cfOrigin;dur=481
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=OJ0kS7m1hRe%2FdKhH0Fz0EqR6a8%2BjpjR4f3jP4ciMoLQpNOC1TQIEpGGLX3%2BrxgC7K2ueDbfG2iNQf0HY6n2%2BJjX6iNFLO5YR7IxwmiSeBoW0sH9aQ4x%2BRmz2YcjKqZhY8Clt&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64bdf86131d7-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 56
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsInVzZXIiOiJkZXJlayIsImlhdCI6MTc3NDkwODA5M30.7bvoTzuKG-hanuf4s4o90fMnjFDp0OF9CPH7d5LKQfo&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;derek&quot;,&#xd;
+  &quot;password&quot;: &quot;jklg*_56&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="1418" it="0" lt="1418" ct="861" ts="1774908092204" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-1" dt="text" de="utf-8" by="923" sby="243" sc="1" ec="0" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 153
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;99-EE/wbL+4YFIteun1+K354Ym9FV0&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=482
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=bSRgzbf4FSVSzVv8mwpGt%2FDXcmjlnbVbV2nXLDq13KAthpI%2FksCtA7nw69vGs6hWpn9ml%2BoIOzeGHUz4gQ9ab4ikUovivhyO5tGQbsIpItSKrFHIQYZFavhirMFbrq%2BSFF4O&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64be2ed725e3-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 61
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXIiOiJrZXZpbnJ5YW4iLCJpYXQiOjE3NzQ5MDgwOTN9.k_Ofd8KJogyfI4lD_YynCE3MT0JsfLk8ZidtySSDR6s&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;kevinryan&quot;,&#xd;
+  &quot;password&quot;: &quot;kev02937@&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="360" it="0" lt="360" ct="87" ts="1774908093378" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-3" dt="text" de="utf-8" by="798" sby="235" sc="1" ec="1" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:33 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=4,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=G%2BSFQ6HGh9fCnQS373otRv5XVOY2Hh0BtA5HIZ4HOhfRstQQ3DPyGL3XsSZAeuXDOl8RgR5njf3NnqtdNjHKhh6l9JuDtCYttI24b60IB6ELgspMGA4GsGG%2BElzJag7E%2B66I&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c09dcb7529-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user2&quot;,&#xd;
+  &quot;password&quot;: &quot;pass2&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="368" it="0" lt="368" ct="87" ts="1774908093622" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-1" dt="text" de="utf-8" by="919" sby="237" sc="1" ec="0" ng="8" na="8" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 149
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;95-XSVE9QQ6uFeXfD8ipzUlFmr7ojE&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=6,cfOrigin;dur=231
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=KZw530yAKGMBtHVggWYK87ZFGas49lE%2Fdc6RlMK%2BdglHkoNXyG4%2B3Qq0fELQw6imK8TnPqq3Z2mzqd4aViMPRvxzNuo%2BSpE1uI9U1p1ePaoav0csxzn7LpoaAtPDnmQKn66h&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c21fb851d9-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 55
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXIiOiJkb25lcm8iLCJpYXQiOjE3NzQ5MDgwOTN9.WfqU49pZIEPl1hCj2p_C_Hc5VFJ_TyLJTSUVwPFkWik&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;donero&quot;,&#xd;
+  &quot;password&quot;: &quot;ewedon&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="676" it="0" lt="676" ct="132" ts="1774908093327" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-6" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=8,cfOrigin;dur=482
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=lP7F6vCTqzMVIFiBuJcg27xiNsJkv%2BOGNqjDzGnTdf42nW1yIcqUzxZ%2BLyJ2TVp7MptJ%2BIEs58sm2O9MLxA5ep32BufNwaW3cfYRAY4RhX6pE6O2duRn1NzNr3R4D1L0swW%2F&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c088d074be-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user1&quot;,&#xd;
+  &quot;password&quot;: &quot;pass1&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="440" it="0" lt="440" ct="140" ts="1774908093592" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-4" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=4,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=plbncPAKcycscrKUAQ9K397YrZ2i4%2BZED7l1cEiE%2BYjZwIUNUlCmWnfH%2BG3f7vJLHyDIHW8Ivwts66WsEO9xl5SSvEgOlT2lUSHJK3P4lBj6iOIVhc90Oum2wTNJ%2BKyGsiHb&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c25ac586d7-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user&quot;,&#xd;
+  &quot;password&quot;: &quot;passwd&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="678" it="0" lt="678" ct="133" ts="1774908093387" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-5" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=481
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=pbrOohTs3bGkua5OCKJTTRApwB2BgveSnyyv%2FhZNxAuUWLXdd8j%2F9A%2BxFcdd0YZjkkh6Ug3yRmkqbJ%2F9WE9pZgKlyB60zUjTgHlY0KmR6SPQGt8YIBsPAIZgmMI9lpP5I5JM&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c10903a540-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user3&quot;,&#xd;
+  &quot;password&quot;: &quot;pass3&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="441" it="0" lt="441" ct="142" ts="1774908093624" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-7" dt="text" de="utf-8" by="919" sby="243" sc="1" ec="0" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 153
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;99-53k+FmzALP1pKH3cSCOWQdocww0&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=4,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=A4wkS1UqAZwTRjlERnkAI%2BOfoXQH4mcasEWW7nmILwL1WJn9QgmcZ186ToZAQYHazcA%2BgPG1cj6hYa4Pk8HQMpFJThc1CgTDu1DpZxG8ijZsRMFxojX8FMKADPZKGi5OsFbW&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c29fb9337c-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 61
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXIiOiJrZXZpbnJ5YW4iLCJpYXQiOjE3NzQ5MDgwOTR9.svYFaDAxzeHbIS-QIjv7iXIdZ29jv5Xys4hgOMZ4APA&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;kevinryan&quot;,&#xd;
+  &quot;password&quot;: &quot;kev02937@&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="368" it="0" lt="368" ct="90" ts="1774908093739" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-3" dt="text" de="utf-8" by="918" sby="237" sc="1" ec="0" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;94-fZTrl7OlRz5e8ywty8s4d8+V1R4&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=232
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=GMHe1gcKI3TitUfIGIeuC%2FiDIR8wtM8bIZIl8RlfpbHWe3rn9hmCTIpkE%2FxxHbsA6mIwkeEq4GtLgRmTt3D13YfROSc%2BIW7BFWrlzpMo9kngQ3INReYMXT%2BzWhOradgmaCzO&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c2dd288733-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 55
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTc3NDkwODA5NH0.db3aKjqSgdjSzJB3Uz2K_e1GWFYBx2VbK0JfepXYx7I&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;johnd&quot;,&#xd;
+  &quot;password&quot;: &quot;m38rmF$&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="702" it="0" lt="702" ct="146" ts="1774908093474" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-2" dt="text" de="utf-8" by="794" sby="235" sc="1" ec="1" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=6,cfOrigin;dur=481
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=OUQCURlorvKK84XzP1LNyjGozrEMgE7YBkuEVlWpUTFa3RusrVXhQrI87SKYPVaEyQGVI59rJiTlT6EMrrKQmIdi%2BmlEPYeKWQqKngtURJhgbfb2ggGgo9M2CQsI4AUmYlXw&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c1a92aed33-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user4&quot;,&#xd;
+  &quot;password&quot;: &quot;pass4&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="409" it="0" lt="409" ct="119" ts="1774908093929" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-8" dt="text" de="utf-8" by="916" sby="238" sc="1" ec="0" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;94-fSzdLyzc9u369zhdu6MtGE/vz+o&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=226
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=vy11E6hFYKLaUUm0eJOHFsgkXxta946ZdhwenpgogxKvKmSSljN0%2Faa82uOqCqBbBzkHLWd12QxVaOnu1IhVCqWzHbPenNie8U%2FOii2qOGdhzfDPPFDqe15v5%2BBi8FZdeytl&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c45d97b08a-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 56
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsInVzZXIiOiJkZXJlayIsImlhdCI6MTc3NDkwODA5NH0.3M4G0OaOwm7bIRL4s9KFMaxPgsXaREquxo92gFRPPPM&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;derek&quot;,&#xd;
+  &quot;password&quot;: &quot;jklg*_56&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="358" it="0" lt="358" ct="87" ts="1774908094065" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-5" dt="text" de="utf-8" by="794" sby="235" sc="1" ec="1" ng="7" na="7" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=2,cfOrigin;dur=226
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=QsQ3Ury7jCDREoTs3sWyE5Ay47uTpoYUzvpUv7a6wtagLMkGEKPXyYgRVOAZ86YmUxZ4QUlF6nxvTOa5dgIim7iJPot7r%2F1aWqSdQ5kONeASl8LMKyT0WKRd6pR5JJKigqfD&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c4eb482af6-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user2&quot;,&#xd;
+  &quot;password&quot;: &quot;pass2&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="405" it="0" lt="405" ct="118" ts="1774908094032" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-4" dt="text" de="utf-8" by="798" sby="235" sc="1" ec="1" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=ZBcvVQdLGRvW8h%2Bd8RHrS3g4lj5Al13B7pOSFML3mikCaBHHK416kZckwkzO8%2BBR6v%2FYnDOZsDdvZbBVFJCIL495iUW1eXjkw9m5BF9UK3GNgUHB8UN5HyBFRqxLVvflZFaR&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c4e9918b1f-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user1&quot;,&#xd;
+  &quot;password&quot;: &quot;pass1&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="438" it="0" lt="438" ct="138" ts="1774908094004" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-6" dt="text" de="utf-8" by="926" sby="239" sc="1" ec="0" ng="5" na="5" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 152
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;98-cMkFlsPnDxy0h/HXXObLYSQnK9o&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=4,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=dlmU6Agyl44yQu3DXvkJKE5oDShNr%2BzokZ%2Ftb9Y3QQeMYGEpX3Hc3eATh6NAWdVRbCmAQPQMbJrHsN6MqPPPcetq%2BymJkvttR%2BGo2lX0NM1KD2qZxP9Z%2BnG2mg%2B6jlThJ84U&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c4e93f437d-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 57
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXIiOiJtb3JfMjMxNCIsImlhdCI6MTc3NDkwODA5NH0.Og3tn1p9JDp5g0xAWi0bw3Mz6R4RTVur2Wlz9HTw2Fs&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;mor_2314&quot;,&#xd;
+  &quot;password&quot;: &quot;83r5^_&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="419" it="0" lt="419" ct="123" ts="1774908094065" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-7" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="5" na="5" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=ZZ8ErBNqic0L8f7hol7%2FPzcyjZWYLVXUpZXqMcPLCffQbjZpmqiwVBnBkOY8zXookwd87I6BxV8d%2BlrnxXgHoTEwI8Rbbpe9c7bl2k6EKUORmuDJLfU5KzHb%2FH%2BNLH0EfWNz&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c53b02d9e5-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user3&quot;,&#xd;
+  &quot;password&quot;: &quot;pass3&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="413" it="0" lt="413" ct="125" ts="1774908094176" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-2" dt="text" de="utf-8" by="798" sby="235" sc="1" ec="1" ng="6" na="6" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=226
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=vgRtfuHKZl2uJeIJPKDtP5hDev1kYYvMv5gxTbl5Ca9PV60dhQXX9kWs7aOyxKYBe6IuMpcwFY%2F2%2FcNcv%2BqJxzCiPjEdiY6fArORB8vmSVMS0PzkOf938m1CHLuUy6fpsjKv&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c5dd50749c-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user4&quot;,&#xd;
+  &quot;password&quot;: &quot;pass4&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="364" it="0" lt="364" ct="87" ts="1774908094228" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-9" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="5" na="5" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=6,cfOrigin;dur=228
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=xg249L62T3hxvQMaFlZTszqtBGLERBqG7rplEedphDquI%2Bo1Y9ov0TUyf8OnqV6qL%2FK%2FhQcX1VtVyt%2FehBQI67thdsIYzPNgUpnykQFmtWLiiapfJDzq24F2Mf1A5pPjBBUR&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c5ea7c5c64-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user&quot;,&#xd;
+  &quot;password&quot;: &quot;passwd&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="420" it="0" lt="419" ct="127" ts="1774908094339" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-8" dt="text" de="utf-8" by="917" sby="237" sc="1" ec="0" ng="5" na="5" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 149
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;95-O7HEQrMmmCOh5+lUapnmG9DdbbU&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=5,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=CsSKqvCDzjCrwSpPlXovYIWjaCYkVHgUqoL8TM6igVpH9jDES1rM3sLEiM5deKm9A1ySqhad9JE1AmBn56qdHE%2F7JnKXGKt%2Fdx%2Fzu8WS4tYXyztB7tjpvsQ5a2ZVWKgKc8OD&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c6fdc974b0-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 55
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXIiOiJkb25lcm8iLCJpYXQiOjE3NzQ5MDgwOTR9.JDgNUjaeNFrjZTRehbFztPdsUvJL5vllBBHpIUpnhs8&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;donero&quot;,&#xd;
+  &quot;password&quot;: &quot;ewedon&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="364" it="0" lt="364" ct="88" ts="1774908094524" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-10" dt="text" de="utf-8" by="914" sby="238" sc="1" ec="0" ng="5" na="5" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;94-fSzdLyzc9u369zhdu6MtGE/vz+o&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=227
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=s5Hz6%2BK7crRdm5qcQDQRAC9NeNxHBIzEB607ruMapFiIYgji2n2tQWMG1NcNkxXXUjFJQ8NR0ifRApjfgC3YYn%2BUEoKUxCD1ME9iMbFex7QHdL2TD09AluxlOMMdi4mE7ifr&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c7cd1cdfe6-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 56
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsInVzZXIiOiJkZXJlayIsImlhdCI6MTc3NDkwODA5NH0.3M4G0OaOwm7bIRL4s9KFMaxPgsXaREquxo92gFRPPPM&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;derek&quot;,&#xd;
+  &quot;password&quot;: &quot;jklg*_56&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="452" it="0" lt="452" ct="147" ts="1774908094443" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-6" dt="text" de="utf-8" by="917" sby="243" sc="1" ec="0" ng="5" na="5" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 153
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;99-53k+FmzALP1pKH3cSCOWQdocww0&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=230
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=rc41HKcca569H4rbFNgTWplm5vALHfSXNPunACEU3N9r6cM1HC4byBPbno5VCLvXaHPoErZxHzdgrhmXfzoFhJ7xAuBVXxzOsZeD2jos%2FXpIBv4o4MStyUCugWbNajgVIM5n&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c7bf2b6d1f-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 61
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXIiOiJrZXZpbnJ5YW4iLCJpYXQiOjE3NzQ5MDgwOTR9.svYFaDAxzeHbIS-QIjv7iXIdZ29jv5Xys4hgOMZ4APA&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;kevinryan&quot;,&#xd;
+  &quot;password&quot;: &quot;kev02937@&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="412" it="0" lt="412" ct="126" ts="1774908094485" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-7" dt="text" de="utf-8" by="918" sby="237" sc="1" ec="0" ng="4" na="4" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;94-fZTrl7OlRz5e8ywty8s4d8+V1R4&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=2,cfOrigin;dur=228
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=ZWeVFMnXyrm4SFEgfLJtt8vvTSiS9%2Bj9phfOY3lCy1rSIv9DU9Fpq%2BL%2BHfz2bBwhrEShmbVSm80l0iv3MYqmfO66cUs2QT7scDZUNDi57KviG%2FURUQeIVuPs1BgVaXFzUuAO&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c7cc81c9df-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 55
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXIiOiJqb2huZCIsImlhdCI6MTc3NDkwODA5NH0.db3aKjqSgdjSzJB3Uz2K_e1GWFYBx2VbK0JfepXYx7I&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;johnd&quot;,&#xd;
+  &quot;password&quot;: &quot;m38rmF$&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="359" it="0" lt="359" ct="84" ts="1774908094592" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 2-9" dt="text" de="utf-8" by="926" sby="239" sc="1" ec="0" ng="3" na="3" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 30 Mar 2026 22:01:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 152
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;98-cMkFlsPnDxy0h/HXXObLYSQnK9o&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=230
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=fi5r%2B6Pn4qDMLVT870gl%2BzU6GU7oAAiOx%2FHZ4FCfqgzpopjLgB7cGtrEHodAKjloI5Jn4Jep7gFvWLPh3fyihW%2BXj9W8rneSIll0bH51xHGNTEayyB%2Frb98%2B36rJe8s6vM81&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c82d785057-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 57
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXIiOiJtb3JfMjMxNCIsImlhdCI6MTc3NDkwODA5NH0.Og3tn1p9JDp5g0xAWi0bw3Mz6R4RTVur2Wlz9HTw2Fs&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;mor_2314&quot;,&#xd;
+  &quot;password&quot;: &quot;83r5^_&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="458" it="0" lt="458" ct="153" ts="1774908094760" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-8" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="3" na="3" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=4,cfOrigin;dur=226
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=pyvwyr2fr9dZl7FRzRV8zBkOm46BrZWnf1DDAD5c8uvzWr26UiV%2BiC74lH6XYfI7vpjbxmgW2hFvo%2F%2BZQ0aciwZKhro0PKruyOlsUR2QyFRtRc2PGbW%2Bcf0HpivM1gayIf7I&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64c9cdf83f1e-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user1&quot;,&#xd;
+  &quot;password&quot;: &quot;pass1&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="400" it="0" lt="400" ct="106" ts="1774908094889" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-10" dt="text" de="utf-8" by="800" sby="235" sc="1" ec="1" ng="2" na="2" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=8,cfOrigin;dur=230
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=YWcwN%2B9R97RcY4G%2F59d04kByTdzWPydbn4Vk8EJx9LWOBglmsiOPEHxk2wcZQCqj928DBxG6WW2aSRUjxac73H%2FCY6Voe1oc%2FJ0qcZBcuiedv9kxR8GO2FHVLZ14gyzYEujV&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64ca2f74b3e6-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user2&quot;,&#xd;
+  &quot;password&quot;: &quot;pass2&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="400" it="0" lt="400" ct="113" ts="1774908094951" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-9" dt="text" de="utf-8" by="796" sby="235" sc="1" ec="1" ng="2" na="2" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=4,cfOrigin;dur=226
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=au0xgZFBfHuB1giSQ8j0mwzadoZiWmIm9MsI8aqRbJ0nE82Y73gNtzdmKIQpV0hre0LsV0n4XUACITSOg8F9MNV5WsR%2BULutSWuOhX8%2BpZaFjjQsGvKMp19exZCtQWVJ0CtV&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64ca9d8b6e24-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user3&quot;,&#xd;
+  &quot;password&quot;: &quot;pass3&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="445" it="0" lt="445" ct="142" ts="1774908095290" s="false" lb="HTTP Request" rc="401" rm="Unauthorized" tn="Thread Group 2-10" dt="text" de="utf-8" by="802" sby="235" sc="1" ec="1" ng="1" na="1" hn="MacBook-Pro-de-Jesse.local">
+  <assertionResult>
+    <name>Response Assertion 201 Status</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;token&quot;/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Date: Mon, 30 Mar 2026 22:01:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/&quot;21-kqEUlF5d6RRpf3XO8rj97canyAM&quot;
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+Server-Timing: cfEdge;dur=3,cfOrigin;dur=226
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=EjFzXeMtEp8AnHIF796oq7iTxYHS1ghorOLX5Dko2F8RZ8Elyq7OkgseaqLkDepIXWfHz2s8HuAAQ%2FDCgIzDrlt3b7TL1%2Bhlsp%2Fm%2FgqipY9XMpzgGWIg1CsQ%2Bu37AzcdH6g8&quot;}]}
+Server: cloudflare
+CF-RAY: 9e4a64cd08c8c288-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Content-Length: 53
+Host: fakestoreapi.com
+User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+</requestHeader>
+  <responseData class="java.lang.String">username or password is incorrect</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;username&quot;: &quot;user4&quot;,&#xd;
+  &quot;password&quot;: &quot;pass4&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://fakestoreapi.com/auth/login</java.net.URL>
+</httpSample>
+
+</testResults>

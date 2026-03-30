@@ -1,0 +1,121 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1774908091823,380,HTTP Request,401,Unauthorized,Thread Group 2-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",802,235,2,3,https://fakestoreapi.com/auth/login,380,0,102
+1774908092428,949,HTTP Request,201,Created,Thread Group 2-3,text,true,,920,237,6,6,https://fakestoreapi.com/auth/login,949,0,637
+1774908093026,361,HTTP Request,201,Created,Thread Group 2-5,text,true,,922,239,6,6,https://fakestoreapi.com/auth/login,361,0,86
+1774908092127,1346,HTTP Request,201,Created,Thread Group 2-2,text,true,,921,237,6,6,https://fakestoreapi.com/auth/login,1346,0,919
+1774908092724,866,HTTP Request,201,Created,Thread Group 2-4,text,true,,921,238,6,6,https://fakestoreapi.com/auth/login,866,0,321
+1774908092204,1418,HTTP Request,201,Created,Thread Group 2-1,text,true,,923,243,6,6,https://fakestoreapi.com/auth/login,1418,0,861
+1774908093378,360,HTTP Request,401,Unauthorized,Thread Group 2-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",798,235,7,7,https://fakestoreapi.com/auth/login,360,0,87
+1774908093622,368,HTTP Request,201,Created,Thread Group 2-1,text,true,,919,237,8,8,https://fakestoreapi.com/auth/login,368,0,87
+1774908093327,676,HTTP Request,401,Unauthorized,Thread Group 2-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,7,7,https://fakestoreapi.com/auth/login,676,0,132
+1774908093592,440,HTTP Request,401,Unauthorized,Thread Group 2-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,7,7,https://fakestoreapi.com/auth/login,440,0,140
+1774908093387,678,HTTP Request,401,Unauthorized,Thread Group 2-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,7,7,https://fakestoreapi.com/auth/login,678,0,133
+1774908093624,441,HTTP Request,201,Created,Thread Group 2-7,text,true,,919,243,7,7,https://fakestoreapi.com/auth/login,441,0,142
+1774908093739,368,HTTP Request,201,Created,Thread Group 2-3,text,true,,918,237,7,7,https://fakestoreapi.com/auth/login,368,0,90
+1774908093474,702,HTTP Request,401,Unauthorized,Thread Group 2-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",794,235,6,6,https://fakestoreapi.com/auth/login,702,0,146
+1774908093929,409,HTTP Request,201,Created,Thread Group 2-8,text,true,,916,238,7,7,https://fakestoreapi.com/auth/login,409,0,119
+1774908094065,358,HTTP Request,401,Unauthorized,Thread Group 2-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",794,235,7,7,https://fakestoreapi.com/auth/login,358,0,87
+1774908094032,405,HTTP Request,401,Unauthorized,Thread Group 2-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",798,235,6,6,https://fakestoreapi.com/auth/login,405,0,118
+1774908094004,438,HTTP Request,201,Created,Thread Group 2-6,text,true,,926,239,5,5,https://fakestoreapi.com/auth/login,438,0,138
+1774908094065,419,HTTP Request,401,Unauthorized,Thread Group 2-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,5,5,https://fakestoreapi.com/auth/login,419,0,123
+1774908094176,413,HTTP Request,401,Unauthorized,Thread Group 2-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",798,235,6,6,https://fakestoreapi.com/auth/login,413,0,125
+1774908094228,364,HTTP Request,401,Unauthorized,Thread Group 2-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,5,5,https://fakestoreapi.com/auth/login,364,0,87
+1774908094339,420,HTTP Request,201,Created,Thread Group 2-8,text,true,,917,237,5,5,https://fakestoreapi.com/auth/login,419,0,127
+1774908094524,364,HTTP Request,201,Created,Thread Group 2-10,text,true,,914,238,5,5,https://fakestoreapi.com/auth/login,364,0,88
+1774908094443,452,HTTP Request,201,Created,Thread Group 2-6,text,true,,917,243,5,5,https://fakestoreapi.com/auth/login,452,0,147
+1774908094485,412,HTTP Request,201,Created,Thread Group 2-7,text,true,,918,237,4,4,https://fakestoreapi.com/auth/login,412,0,126
+1774908094592,359,HTTP Request,201,Created,Thread Group 2-9,text,true,,926,239,3,3,https://fakestoreapi.com/auth/login,359,0,84
+1774908094760,458,HTTP Request,401,Unauthorized,Thread Group 2-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,3,3,https://fakestoreapi.com/auth/login,458,0,153
+1774908094889,400,HTTP Request,401,Unauthorized,Thread Group 2-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",800,235,2,2,https://fakestoreapi.com/auth/login,400,0,106
+1774908094951,400,HTTP Request,401,Unauthorized,Thread Group 2-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",796,235,2,2,https://fakestoreapi.com/auth/login,400,0,113
+1774908095290,445,HTTP Request,401,Unauthorized,Thread Group 2-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[4]]]01
+
+****** comparison: [[[2]]]01
+
+/",802,235,1,1,https://fakestoreapi.com/auth/login,445,0,142
